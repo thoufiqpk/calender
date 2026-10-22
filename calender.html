@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Calendar Generator</title>
+    <link rel="stylesheet" href="calender.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Monthly Calendar Generator</h1>
+        <p>Enter year and month to generate a calendar.</p>
+
+        <div class="inputs">
+            <div>
+                <label for="year">Year:</label>
+                <input type="number" id="year" placeholder="Enter year" min="1">
+            </div>
+
+            <div>
+                <label for="month">Month:</label>
+                <select id="month">
+                    <option value="">Select Month</option>
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
+                </select>
+            </div>
+        </div>
+
+        <button onclick="generateCalendar()">Generate Calendar</button>
+        <button class="reset" onclick="resetCalendar()">Reset</button>
+
+        <h2 id="calendarTitle"></h2>
+        <div id="calendar"></div>
+    </div>
+
+    <script src="calender.js"></script>
+</body>
+</html>
